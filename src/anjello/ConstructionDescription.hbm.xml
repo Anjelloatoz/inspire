@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+	<class name="anjello.ConstructionDescription"
+		table="construction">
+
+		<id name="caseId" column="CASE_ID">
+			<generator class="native" />
+		</id>
+		<property name="ClientType" column="ClientType">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">anjello.ConstructionDescription$ClientTypes</param>
+			</type>
+		</property>
+
+		<property name="ClientExperience" column="ClientExperience">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">anjello.ConstructionDescription$ClientExperiences</param>
+			</type>
+		</property>
+
+		<property name="BuildingType" column="BuildingType">
+			<type name="jcolibri.connector.databaseutils.GenericUserType">
+				<param name="className">jcolibri.datatypes.Instance</param>
+			</type>
+		</property>
+		
+		<property name="BuildType" column="BuildType">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">anjello.ConstructionDescription$BuildTypes</param>
+			</type>
+		</property>
+		
+		<property name="CostParameter" column="CostParameter">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">anjello.ConstructionDescription$CostParameters</param>
+			</type>
+		</property>
+		
+		<property name="TimeParameter" column="TimeParameter">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">anjello.ConstructionDescription$TimeParameters</param>
+			</type>
+		</property>
+
+	</class>
+</hibernate-mapping>

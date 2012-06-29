@@ -2,5 +2,11 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/jCOLIBRI"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/ApacheCommons"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate3"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Oracle"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Jena"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Pelet"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

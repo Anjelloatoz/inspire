@@ -1,0 +1,130 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Commercial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Commercial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Residential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Commercial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Commercial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Residential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Residential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Residential"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Residential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Residential"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Education -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Education">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Commercial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Healthcare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Healthcare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Non-Commercial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#House -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#House">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Residential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Industrial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Industrial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Commercial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Multi-Residential -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Multi-Residential">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Residential"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Office -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Office">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Commercial"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Retail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Retail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ontologies/2012/5/Ontology1340473122640.owl#Commercial"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

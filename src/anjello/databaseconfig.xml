@@ -1,0 +1,8 @@
+<DataBaseConfiguration>
+	<HibernateConfigFile>anjello/hibernate.cfg.xml</HibernateConfigFile>
+	<DescriptionMappingFile>anjello/ConstructionDescription.hbm.xml</DescriptionMappingFile>
+	<DescriptionClassName>anjello.ConstructionDescription</DescriptionClassName>
+	<SolutionMappingFile>anjello/ConstructionSolution.hbm.xml</SolutionMappingFile>
+	<SolutionClassName>anjello.ConstructionSolution</SolutionClassName>
+	
+</DataBaseConfiguration>

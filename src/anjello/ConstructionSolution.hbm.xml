@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping default-lazy="false">
+<class name="jcolibri.examples.TravelRecommender.ConstructionSolution" table="construction">
+	<id name="id" column="CASE_ID">
+	</id>
+	<property name="OrganizationalStrategy" column="OrganizationalStrategy">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">jcolibri.examples.TravelRecommender.ConstructionSolution$OrganizationalStrategies</param>
+			</type>
+		</property>
+		
+	<property name="PaymentModality" column="PaymentModality">
+			<type name="jcolibri.connector.databaseutils.EnumUserType">
+				<param name="enumClassName">jcolibri.examples.TravelRecommender.ConstructionSolution$PaymentModalities</param>
+			</type>
+		</property>
+</class>
+
+</hibernate-mapping>

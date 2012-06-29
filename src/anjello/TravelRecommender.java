@@ -23,12 +23,12 @@ import jcolibri.cbrcore.CBRCaseBase;
 import jcolibri.cbrcore.CBRQuery;
 import jcolibri.cbrcore.Connector;
 import jcolibri.connector.DataBaseConnector;
-import jcolibri.examples.TravelRecommender.gui.AutoAdaptationDialog;
-import jcolibri.examples.TravelRecommender.gui.QueryDialog;
-import jcolibri.examples.TravelRecommender.gui.ResultDialog;
-import jcolibri.examples.TravelRecommender.gui.RetainDialog;
-import jcolibri.examples.TravelRecommender.gui.RevisionDialog;
-import jcolibri.examples.TravelRecommender.gui.SimilarityDialog;
+import anjello.AutoAdaptationDialog;
+import anjello.QueryDialog;
+import anjello.ResultDialog;
+import anjello.RetainDialog;
+import anjello.RevisionDialog;
+import anjello.SimilarityDialog;
 import jcolibri.exception.ExecutionException;
 import jcolibri.method.retrieve.RetrievalResult;
 import jcolibri.method.retrieve.NNretrieval.NNConfig;
@@ -82,7 +82,7 @@ public class TravelRecommender implements StandardCBRApplication {
 			_connector = new DataBaseConnector();
 			// Init the ddbb connector with the config file
 			_connector.initFromXMLfile(jcolibri.util.FileIO
-					.findFile("jcolibri/examples/TravelRecommender/databaseconfig.xml"));
+					.findFile("anjello/databaseconfig.xml"));
 			// Create a Lineal case base for in-memory organization
 			_caseBase = new LinealCaseBase();
 			
@@ -92,7 +92,7 @@ public class TravelRecommender implements StandardCBRApplication {
 			ob.initWithPelletReasoner();
 			// Setup the main ontology
 			OntologyDocument mainOnto = new OntologyDocument("http://gaia.fdi.ucm.es/ontologies/travel-destinations.owl", 
-									 FileIO.findFile("jcolibri/examples/TravelRecommender/Construction.owl").toExternalForm());
+									 FileIO.findFile("anjello/Construction.owl").toExternalForm());
 			// There are not subontologies
 			ArrayList<OntologyDocument> subOntologies = new ArrayList<OntologyDocument>();
 			// Load the ontology

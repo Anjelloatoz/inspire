@@ -31,7 +31,7 @@ import javax.swing.UIManager;
 
 import jcolibri.cbrcore.Attribute;
 import anjello.ConstructionDescription;
-import anjello.TravelRecommender;
+import anjello.ConstructionRecommender;
 import jcolibri.method.retrieve.NNretrieval.NNConfig;
 import jcolibri.method.retrieve.NNretrieval.similarity.LocalSimilarityFunction;
 import jcolibri.method.retrieve.NNretrieval.similarity.local.EnumCyclicDistance;
@@ -183,9 +183,9 @@ public class SimilarityDialog extends JDialog {
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
-					TravelRecommender.getInstance().postCycle();
+					ConstructionRecommender.getInstance().postCycle();
 				} catch (Exception ex) {
-					org.apache.commons.logging.LogFactory.getLog(TravelRecommender.class).error(ex);
+					org.apache.commons.logging.LogFactory.getLog(ConstructionRecommender.class).error(ex);
 				}
 				System.exit(-1);
 			}

@@ -30,7 +30,7 @@ import javax.swing.UIManager;
 
 import jcolibri.cbrcore.CBRCase;
 import anjello.TravelDescription;
-import anjello.TravelRecommender;
+import anjello.ConstructionRecommender;
 import anjello.TravelSolution;
 import jcolibri.util.FileIO;
 
@@ -211,9 +211,9 @@ public class RetainDialog extends JDialog {
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
-					TravelRecommender.getInstance().postCycle();
+					ConstructionRecommender.getInstance().postCycle();
 				} catch (Exception ex) {
-					org.apache.commons.logging.LogFactory.getLog(TravelRecommender.class).error(ex);
+					org.apache.commons.logging.LogFactory.getLog(ConstructionRecommender.class).error(ex);
 				}
 				System.exit(-1);
 			}

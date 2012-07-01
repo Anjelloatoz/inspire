@@ -28,7 +28,7 @@ import javax.swing.UIManager;
 
 import jcolibri.cbrcore.CBRQuery;
 import anjello.ConstructionDescription;
-import anjello.TravelRecommender;
+import anjello.ConstructionRecommender;
 import anjello.TravelDescription.AccommodationTypes;
 import anjello.TravelDescription.Seasons;
 import anjello.ConstructionDescription.ClientTypes;
@@ -147,9 +147,9 @@ public class QueryDialog extends JDialog {
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
-					TravelRecommender.getInstance().postCycle();
+					ConstructionRecommender.getInstance().postCycle();
 				} catch (Exception ex) {
-					org.apache.commons.logging.LogFactory.getLog(TravelRecommender.class).error(ex);
+					org.apache.commons.logging.LogFactory.getLog(ConstructionRecommender.class).error(ex);
 				}
 				System.exit(-1);
 			}

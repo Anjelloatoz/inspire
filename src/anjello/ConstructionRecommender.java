@@ -46,18 +46,18 @@ import es.ucm.fdi.gaia.ontobridge.OntologyDocument;
  * @author Juan A. Recio-Garcia
  * @version 1.0
  */
-public class TravelRecommender implements StandardCBRApplication {
+public class ConstructionRecommender implements StandardCBRApplication {
 
-	private static TravelRecommender _instance = null;
+	private static ConstructionRecommender _instance = null;
 
-	public  static TravelRecommender getInstance()
+	public  static ConstructionRecommender getInstance()
 	{
 		if(_instance == null)
-		   _instance = new TravelRecommender();
+		   _instance = new ConstructionRecommender();
 		return _instance;
 	}
 	
-	private TravelRecommender()
+	private ConstructionRecommender()
 	{
 	}
 	
@@ -194,7 +194,7 @@ public class TravelRecommender implements StandardCBRApplication {
 	
 	public static void main(String[] args) {
 	
-		TravelRecommender recommender = getInstance();
+		ConstructionRecommender recommender = getInstance();
 		recommender.showMainFrame();
 		try
 		{
@@ -216,7 +216,7 @@ public class TravelRecommender implements StandardCBRApplication {
 			recommender.postCycle();
 		}catch(Exception e)
 		{
-			org.apache.commons.logging.LogFactory.getLog(TravelRecommender.class).error(e);
+			org.apache.commons.logging.LogFactory.getLog(ConstructionRecommender.class).error(e);
 			javax.swing.JOptionPane.showMessageDialog(null, e.getMessage());
 		}
 		System.exit(0);

@@ -27,7 +27,7 @@ import javax.swing.UIManager;
 
 import jcolibri.cbrcore.CBRCase;
 import jcolibri.cbrcore.CBRQuery;
-import anjello.TravelRecommender;
+import anjello.ConstructionRecommender;
 import jcolibri.method.retrieve.RetrievalResult;
 import jcolibri.util.FileIO;
 
@@ -107,9 +107,9 @@ public class AutoAdaptationDialog extends JDialog {
 		exit.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
 				try {
-					TravelRecommender.getInstance().postCycle();
+					ConstructionRecommender.getInstance().postCycle();
 				} catch (Exception ex) {
-					org.apache.commons.logging.LogFactory.getLog(TravelRecommender.class).error(ex);
+					org.apache.commons.logging.LogFactory.getLog(ConstructionRecommender.class).error(ex);
 				}
 				System.exit(-1);
 			}
